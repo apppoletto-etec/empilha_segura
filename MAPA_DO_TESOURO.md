@@ -224,10 +224,10 @@ Usar **GitHub Pages** para a landing page e manter as APKs no **Firebase Storage
 Configuração planejada:
 
 ```text
-Repositório: a definir para o projeto Page
+Repositório: apppoletto-etec/landingPage
 Branch: main
 Pasta: raiz do repositório
-Endereço esperado: depende do nome do novo repositório
+Endereço esperado: https://apppoletto-etec.github.io/landingPage/
 ```
 
 No GitHub:
@@ -417,7 +417,7 @@ Em 24/09/2026:
 - [x] Os links diretos de download estão funcionando.
 - [x] A landing page foi criada e validada localmente.
 - [x] A landing page foi separada dos aplicativos na pasta local `Page`.
-- [ ] Criar um repositório próprio para a landing page e publicar seu código.
+- [x] Repositório próprio criado em `apppoletto-etec/landingPage`.
 - [ ] O GitHub Pages ainda precisa ser ativado em `Settings → Pages`.
 - [ ] Após ativação, o endereço público e os quatro downloads devem ser testados.
 
