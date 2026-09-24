@@ -9,6 +9,8 @@
   ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 </div>
 
+> 🗺️ **Continuidade do ecossistema:** consulte o [Mapa do Tesouro](MAPA_DO_TESOURO.md), o guia oficial para manutenção, releases, Firebase, APKs e landing page.
+
 ## Sobre o projeto
 
 O **Empilha Segura** é um aplicativo Android voltado ao acompanhamento preventivo de empilhadeiras. Ele centraliza verificações diárias e mensais, mantém o histórico dos registros e ajuda equipes a adotarem uma rotina operacional mais segura.
