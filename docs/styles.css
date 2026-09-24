@@ -34,7 +34,7 @@ a { color: inherit; text-decoration: none; }
 .brand { display: flex; align-items: center; gap: 11px; font-family: var(--display); font-weight: 700; font-size: 19px; }
 .brand > span:last-child > span { color: var(--lime); }
 .brand-mark { display: grid; place-items: center; width: 36px; height: 36px; color: white; background: linear-gradient(145deg, var(--blue), var(--lime)); border-radius: 11px 4px 11px 4px; font-weight: 800; }
-.brand-logo { width: 54px; height: 54px; padding: 2px; object-fit: contain; object-position: center; border-radius: 13px 5px 13px 5px; background: #031018; box-shadow: 0 5px 16px rgba(23,50,77,.16); }
+.brand-logo { width: 58px; height: 58px; padding: 0; object-fit: contain; object-position: center; background: transparent; filter: drop-shadow(0 5px 8px rgba(23,50,77,.18)); }
 nav { display: flex; gap: 30px; color: var(--muted); font-size: 14px; font-weight: 600; }
 nav a { transition: color .2s; }
 nav a:hover { color: var(--text); }
@@ -66,7 +66,7 @@ h1 em { color: var(--lime); font-style: normal; }
 .phone::before { content: ""; position: absolute; width: 76px; height: 20px; background: #07111f; border-radius: 0 0 13px 13px; left: 50%; top: 8px; transform: translateX(-50%); z-index: 3; }
 .phone-screen { height: 100%; overflow: hidden; border-radius: 31px; padding: 20px; background: radial-gradient(circle at 80% 15%, rgba(200,255,90,.2), transparent 30%), linear-gradient(160deg,#11253a,#091421); }
 .phone-top { display: flex; justify-content: space-between; font-size: 8px; color: #dce7f4; }
-.phone-logo { width: 78px; height: 78px; display: grid; place-items: center; overflow: hidden; border: 1px solid rgba(255,255,255,.16); border-radius: 19px 7px 19px 7px; background: #07111f; margin-top: 52px; box-shadow: 0 10px 25px rgba(0,0,0,.25); }
+.phone-logo { width: 88px; height: 78px; display: grid; place-items: center; margin-top: 52px; filter: drop-shadow(0 10px 15px rgba(0,0,0,.22)); }
 .phone-logo img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
 .phone-screen p { color: var(--lime); text-transform: uppercase; letter-spacing: .15em; font-size: 8px; font-weight: 800; margin: 15px 0 8px; }
 .phone-screen strong { font-family: var(--display); font-size: 24px; line-height: 1.12; }
@@ -139,8 +139,14 @@ h1 em { color: var(--lime); font-style: normal; }
 .academic-note h2 { font-size: 30px; }
 .academic-note p { color: #c4d2df; font-size: 13px; margin-bottom: 0; }
 footer { min-height: 120px; display: grid; grid-template-columns: 1fr 1.5fr 1fr; align-items: center; gap: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; }
-footer p { text-align: center; }
-footer > span { text-align: right; }
+.footer-center { display: grid; justify-items: center; gap: 8px; padding: 24px 0; }
+footer p { text-align: center; margin: 0; }
+.footer-contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.footer-contact a { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 99px; color: var(--navy); background: white; font-weight: 700; transition: border-color .2s, color .2s, transform .2s; }
+.footer-contact a:hover { color: var(--lime); border-color: rgba(22,127,122,.35); transform: translateY(-1px); }
+.footer-contact a:first-child span { color: #25a868; }
+.footer-contact a:last-child span { color: var(--blue); font-weight: 800; }
+.copyright { text-align: right; line-height: 1.6; }
 
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.visible { opacity: 1; transform: none; }
@@ -159,7 +165,7 @@ footer > span { text-align: right; }
   .pillar-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   footer { grid-template-columns: 1fr; text-align: center; padding: 30px 0; }
   footer .brand { justify-content: center; }
-  footer p, footer > span { text-align: center; margin: 0; }
+  footer p, .copyright { text-align: center; margin: 0; }
 }
 
 @media (max-width: 650px) {
