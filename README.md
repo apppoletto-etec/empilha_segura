@@ -15,6 +15,8 @@
 
 O **Empilha Segura** é um aplicativo Android voltado ao acompanhamento preventivo de empilhadeiras. Ele centraliza verificações diárias e mensais, mantém o histórico dos registros e ajuda equipes a adotarem uma rotina operacional mais segura.
 
+Este aplicativo integra a **SST Digital: Tecnologia a Serviço da Segurança**, um ecossistema acadêmico que explora como soluções móveis podem substituir controles em papel, melhorar a rastreabilidade e fortalecer uma cultura de prevenção. O projeto tem finalidade educacional e demonstrativa.
+
 ## Funcionalidades
 
 - Autenticação e cadastro de usuários;
@@ -62,4 +64,4 @@ Transformar inspeções operacionais em um processo simples, padronizado e acess
 
 ---
 
-<div align="center">Desenvolvido como parte do ecossistema de segurança do trabalho <strong>Poletto ETEC</strong>.</div>
+<div align="center">Parte do ecossistema <strong>SST Digital: Tecnologia a Serviço da Segurança</strong>.</div>

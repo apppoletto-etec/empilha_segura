@@ -1,9 +1,9 @@
-# 🗺️ Mapa do Tesouro — Ecossistema Poletto Apps
+# 🗺️ Mapa do Tesouro — Ecossistema SST Digital
 
-> Documento oficial de continuidade técnica dos aplicativos de Segurança do Trabalho da Poletto ETEC.
+> Documento oficial de continuidade técnica da **SST Digital: Tecnologia a Serviço da Segurança**.
 
 **Última atualização:** 24 de setembro de 2026  
-**Responsável pelo ecossistema:** Poletto ETEC  
+**Responsável pelo ecossistema:** SST Digital: Tecnologia a Serviço da Segurança  
 **Organização no GitHub:** [apppoletto-etec](https://github.com/apppoletto-etec)
 
 ---
@@ -25,6 +25,10 @@ Antes de alterar qualquer projeto:
 
 O ecossistema é formado por quatro aplicativos Android e uma landing page central de distribuição:
 
+A **SST Digital: Tecnologia a Serviço da Segurança** é uma iniciativa acadêmica voltada à modernização da gestão de Saúde e Segurança do Trabalho. Os projetos demonstram como aplicativos e plataformas integradas podem substituir pilhas de papel e planilhas manuais por dados organizados, mobilidade e uma cultura preventiva mais ativa.
+
+Os aplicativos possuem finalidade educacional e demonstrativa. Eles não substituem plataformas corporativas homologadas, consultoria técnica, obrigações legais ou a atuação de profissionais habilitados em SST.
+
 | Aplicativo | Finalidade | Pacote Android | Repositório |
 |---|---|---|---|
 | **Empilha Segura** | Checklists diários e mensais para inspeção de empilhadeiras | `com.lima.checklist` | [empilha_segura](https://github.com/apppoletto-etec/empilha_segura) |
@@ -35,6 +39,23 @@ O ecossistema é formado por quatro aplicativos Android e uma landing page centr
 ### Arquitetura em uma frase
 
 Cada aplicativo é um projeto Android independente, todos usam serviços Firebase e as APKs oficiais são distribuídas pela landing page armazenada no repositório `empilha_segura`.
+
+### Pilares conceituais
+
+- **Gestão de riscos e documentos:** digitalização de PGR, LTCAT, APR e registros preventivos;
+- **Controle de EPIs:** entregas, devoluções, evidências e rastreabilidade por colaborador;
+- **Inspeções e checklists:** formulários eletrônicos para máquinas, veículos e atividades críticas;
+- **Saúde ocupacional:** acompanhamento de ASOs, exames e eventos relacionados ao eSocial;
+- **Treinamentos e DDS:** cronogramas, presença, certificados e reciclagens;
+- **Indicadores e alertas:** transformação dos dados em informações para decisões preventivas.
+
+### Benefícios estudados
+
+- Redução de controles manuais e uso de papel;
+- Maior rastreabilidade dos registros;
+- Alertas proativos sobre prazos e pendências;
+- Mobilidade para uso no campo;
+- Indicadores que apoiam CIPA, SIPAT e gestão preventiva.
 
 ## 3. Localização dos projetos
 
@@ -407,4 +428,4 @@ Se um repositório, caminho, APK, versão, link, token de download ou fluxo muda
 
 ---
 
-**Este é o mapa oficial de continuidade do ecossistema Poletto Apps. Preserve-o, mantenha-o atualizado e use-o como ponto de partida para qualquer nova jornada.**
+**Este é o mapa oficial de continuidade do ecossistema SST Digital. Preserve-o, mantenha-o atualizado e use-o como ponto de partida para qualquer nova jornada.**
