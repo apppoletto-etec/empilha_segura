@@ -178,10 +178,10 @@ Projeto_Polleto\projeto epi\APKs\
 
 ## 8. Landing page
 
-A landing page está versionada no repositório `empilha_segura`, dentro de:
+A landing page é um projeto independente, armazenado na pasta irmã `Page`:
 
 ```text
-docs/
+Page/
 ├── index.html
 ├── styles.css
 ├── script.js
@@ -219,23 +219,23 @@ Não abra o `index.html` diretamente pelo explorador se quiser reproduzir com fi
 
 ### Publicação recomendada
 
-Usar **GitHub Pages** para a landing page e manter as APKs no **Firebase Storage**.
+Usar **GitHub Pages** para a landing page e manter as APKs no **Firebase Storage**. A página deve possuir um repositório próprio, separado dos quatro aplicativos Android.
 
 Configuração planejada:
 
 ```text
-Repositório: apppoletto-etec/empilha_segura
+Repositório: a definir para o projeto Page
 Branch: main
-Pasta: /docs
-Endereço esperado: https://apppoletto-etec.github.io/empilha_segura/
+Pasta: raiz do repositório
+Endereço esperado: depende do nome do novo repositório
 ```
 
 No GitHub:
 
-1. Abra `Settings` do repositório `empilha_segura`.
+1. Crie ou abra o repositório exclusivo da landing page.
 2. Entre em `Pages`.
 3. Em `Build and deployment`, escolha `Deploy from a branch`.
-4. Selecione a branch `main` e a pasta `/docs`.
+4. Selecione a branch `main` e a pasta `/ (root)`.
 5. Salve e aguarde a primeira publicação.
 6. Abra o endereço público e teste os quatro downloads.
 
@@ -279,7 +279,7 @@ epi_express_1.1.apk
 1. Copie a APK final para a pasta local `APKs`.
 2. Envie o arquivo ao Storage do projeto `Dicionario`.
 3. Obtenha o novo link de download.
-4. Atualize o link, versão e tamanho no `docs/index.html`.
+4. Atualize o link, versão e tamanho no `Page/index.html`.
 5. Atualize a tabela e os links deste documento.
 6. Teste o download em uma janela anônima.
 7. Faça commit e push das alterações.
@@ -416,7 +416,8 @@ Em 24/09/2026:
 - [x] As quatro APKs estão no Firebase Storage central.
 - [x] Os links diretos de download estão funcionando.
 - [x] A landing page foi criada e validada localmente.
-- [x] A landing page está versionada em `empilha_segura/docs`.
+- [x] A landing page foi separada dos aplicativos na pasta local `Page`.
+- [ ] Criar um repositório próprio para a landing page e publicar seu código.
 - [ ] O GitHub Pages ainda precisa ser ativado em `Settings → Pages`.
 - [ ] Após ativação, o endereço público e os quatro downloads devem ser testados.
 
