@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".view.DiarioActivity"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                layout="@layout/toolbar_java"
+                android:layout_width="match_parent"
+                android:layout_height="61dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextResponsavelMensal"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/back_campo_data"
+            android:drawableEnd="@drawable/baseline_search_24"
+            android:ems="10"
+            android:hint="Selecione o responsável"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/editDataMensal"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/back_campo_data"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Data "
+            android:inputType="number"
+
+            android:paddingLeft="7dp"
+            android:textColorHint="#979191"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listFuncionarioExames"
+            app:mask="##/##/####" />
+
+        <CheckBox
+            android:id="@+id/checkBoxOleo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:text="Nível do óleo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBateria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="Carga da bateria"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxAgua" />
+
+        <CheckBox
+            android:id="@+id/checkBoxElevacao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="Comandos de elevação"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxHidraulica" />
+
+        <CheckBox
+            android:id="@+id/checkBoxHidraulica"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="Mangueiras hidráulicas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxBateria" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAgua"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="Nível da água"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxOleo" />
+
+        <ListView
+            android:id="@+id/listFuncionarioExames"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextResponsavelMensal" />
+
+
+        <Button
+            android:id="@+id/buttonSalvarExame"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/salvar"
+            android:onClick="salvarEntregaExames"
+            android:text="Salvar"
+            android:theme="@style/SelectionColor"
+            app:layout_constraintEnd_toStartOf="@+id/buttonAtualizarExame"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editProximaMensal" />
+
+        <Button
+            android:id="@+id/buttonAtualizarExame"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/deletar"
+            android:onClick="atualizarEntregaExame"
+            android:text="Editar"
+            app:layout_constraintEnd_toStartOf="@+id/buttonExcluirExame"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonSalvarExame"
+            app:layout_constraintTop_toBottomOf="@+id/editProximaMensal" />
+
+        <Button
+            android:id="@+id/buttonLimparExame"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="@color/novo"
+            android:onClick="limparCamposBotaoNovo"
+            android:text="Novo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonExcluirExame"
+            app:layout_constraintTop_toBottomOf="@+id/editProximaMensal" />
+
+        <Button
+            android:id="@+id/buttonExcluirExame"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/excluir"
+            android:onClick="deletar"
+            android:text="Excluir"
+            app:layout_constraintEnd_toStartOf="@+id/buttonLimparExame"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonAtualizarExame"
+            app:layout_constraintTop_toBottomOf="@+id/editProximaMensal" />
+
+        <LinearLayout
+            android:id="@+id/Linearlistagem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/back_linear"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLimparExame">
+
+
+            <EditText
+                android:id="@+id/editNomePesquisarChecklistmensal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/back_campo_data"
+                android:drawableEnd="@drawable/baseline_search_24"
+                android:ems="10"
+                android:hint="Pesquisar"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingEnd="10dp"
+                android:textColorLink="@color/white" />
+
+            <ListView
+                android:id="@+id/listTotalCheckListMensal"
+                android:layout_width="match_parent"
+                android:layout_height="381dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/back_campo_item_recycler"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/editProximaMensal"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back_campo_data"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Próxima"
+            android:inputType="number"
+            android:paddingLeft="7dp"
+            android:textColorHint="#979191"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxElevacao"
+            app:mask="##/##/####" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:text="Partida:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editDataMensal" />
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/editTextPartidaMensal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint=" 00h:00min"
+            android:inputType="text"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/editDataMensal"
+            app:mask="##:##" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:text="Chegada:"
+            app:layout_constraintEnd_toStartOf="@+id/editTextChegadaMensal"
+            app:layout_constraintTop_toBottomOf="@+id/editDataMensal" />
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/editTextChegadaMensal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:hint="00h:00min"
+            android:inputType="text"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editDataMensal"
+            app:mask="##:##" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

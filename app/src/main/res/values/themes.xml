@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CheckList" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+       <item name="colorPrimary">@color/vermelho</item>
+        <item name="colorPrimaryDark">@color/vermelho</item>
+        <item name="colorAccent">#444040</item>
+    </style>
+
+    <style name="Theme.CheckList" parent="Base.Theme.CheckList" />
+
+    <style name="toolbar" parent="Theme.AppCompat.NoActionBar"/>
+
+
+
+    <style name="SelectionColor">
+        <item name="colorControlActivated">#444040</item>
+        <item name="android:textColorHighlight">#444040</item>
+    </style>
+</resources>

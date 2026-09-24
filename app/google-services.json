@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "374060937596",
+    "project_id": "checklist-26486",
+    "storage_bucket": "checklist-26486.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374060937596:android:12e723b9dd7b030800b4f9",
+        "android_client_info": {
+          "package_name": "com.lima.checklist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXw3khz4CvO1b95dur-7RjOkfXoN87sdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

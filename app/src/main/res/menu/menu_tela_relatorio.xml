@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/cadastroFunc"
+        android:title="Cadastro de Funcionários"/>
+
+
+
+    <item android:id="@+id/main"
+        android:title="Nova entrega de Exames"
+        android:icon="@drawable/baseline_add_circle_outline_24"
+        app:showAsAction="always"
+        />
+
+    <item android:id="@+id/mensal"
+        android:title="CheckList mensal"
+
+        />
+    <item android:id="@+id/relatorioMensal"
+        android:title="Relatório checklist Mensal"
+
+        />
+
+    <item android:id="@+id/sair"
+        android:title="Sair"/>
+
+</menu>

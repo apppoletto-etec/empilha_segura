@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <color name="backgroundTela">#db383b</color>
+    <color name="vermelho">#db383b</color>
+    <color name="amarelo">#db383b</color>
+    <color name="vermelhoEscuro">#db383b</color>
+    <color name="acess">#ECE5E5</color>
+
+
+    <color name="excluir">#db383b</color>
+    <color name="deletar">#3F51B5</color>
+    <color name="salvar">#458148</color>
+    <color name="novo">#C55430</color>
+
+
+
+
+</resources>
