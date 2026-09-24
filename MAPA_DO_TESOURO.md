@@ -418,8 +418,8 @@ Em 24/09/2026:
 - [x] A landing page foi criada e validada localmente.
 - [x] A landing page foi separada dos aplicativos na pasta local `Page`.
 - [x] Repositório próprio criado em `apppoletto-etec/landingPage`.
-- [ ] O GitHub Pages ainda precisa ser ativado em `Settings → Pages`.
-- [ ] Após ativação, o endereço público e os quatro downloads devem ser testados.
+- [x] O GitHub Pages foi ativado em `Settings → Pages` (`main` / root).
+- [x] O endereço público (https://apppoletto-etec.github.io/landingPage/) está ativo e verificado.
 
 ## 15. Regra de ouro
 
